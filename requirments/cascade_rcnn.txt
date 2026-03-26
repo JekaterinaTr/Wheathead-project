@@ -1,0 +1,19 @@
+# Cascade R-CNN (MMDetection)
+
+# PyTorch installed via conda (CUDA 11.3 recommended)
+torch>=1.13.0
+torchvision>=0.14.0
+
+# OpenMMLab stack
+mmcv-full==2.1.0
+mmdet==3.2.0
+
+# Core dependencies
+opencv-python
+numpy
+matplotlib
+pycocotools
+tqdm
+
+# Utilities
+pyyaml

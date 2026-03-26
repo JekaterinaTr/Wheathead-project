@@ -1,0 +1,21 @@
+# RF-DETR environment
+
+# PyTorch installed via conda (recommended)
+torch>=2.0.0
+torchvision>=0.15.0
+torchaudio>=2.0.0
+
+# Core dependencies
+numpy
+opencv-python
+matplotlib
+pandas
+tqdm
+pyyaml
+
+# COCO tools (important for evaluation)
+pycocotools
+
+# RF-DETR installed via:
+# git clone https://github.com/roboflow/rf-detr.git
+# pip install -e .

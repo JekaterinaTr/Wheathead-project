@@ -1,0 +1,8 @@
+
+train: E:/projects/wheathead/project1_dataset/images/train
+
+val: E:/projects/wheathead/project1_dataset/images/val
+test: E:/projects/wheathead/project1_dataset/images/test
+
+names:
+  0: wheat

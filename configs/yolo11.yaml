@@ -1,0 +1,47 @@
+# YOLO11 Experiment Config (Documentation Only)
+
+model:
+  name: yolo11
+  variant: small   # options: nano, small, large
+  weights: yolo11s.pt
+
+data:
+  dataset: Global Wheat Head Dataset 2021
+  config_path: data/wheathead_dataset.yaml
+  num_classes: 1
+  class_names: ["wheat_head"]
+
+training:
+  epochs: 300
+  batch_size: 4
+  image_size: 640
+  seed: 0
+
+optimization:
+  lr0: 0.0008
+  lrf: 0.01
+  warmup_epochs: 3
+  patience: 25
+
+augmentation:
+  mosaic: 0.0
+  mixup: 0.0
+  copy_paste: 0.0
+
+  perspective: 0.0005
+  shear: 0.2
+  scale: 0.2
+
+  flipud: 0.0
+  fliplr: 0.5
+
+  degrees: 2.0
+  translate: 0.1
+
+  hsv_h: 0.0
+  hsv_s: 0.2
+  hsv_v: 0.2
+
+notes:
+  - Dense small-object detection setup
+  - Augmentations aligned with RF-DETR and Cascade R-CNN

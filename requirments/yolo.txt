@@ -1,0 +1,19 @@
+# YOLO11 / YOLO12 (Ultralytics)
+
+ultralytics==8.0.156
+
+# PyTorch (install separately via CUDA index URL if needed)
+torch>=2.0.0
+torchvision>=0.15.0
+torchaudio>=2.0.0
+
+# Core CV / data
+opencv-python
+matplotlib
+pandas
+seaborn
+tqdm
+
+# Optional but useful
+pyyaml
+scipy

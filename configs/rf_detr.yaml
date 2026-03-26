@@ -1,0 +1,41 @@
+# RF-DETR Experiment Config (Documentation Only)
+
+model:
+  name: rf-detr
+  variant: base   # base or large
+
+data:
+  dataset: Global Wheat Head Dataset 2021
+  format: COCO
+  path: D:/Projects/Project1_wheatheads/project1_dataset/images
+  num_classes: 1
+
+training:
+  epochs: 300
+  batch_size: 4
+  image_size: 560
+  seed: 0
+  workers: 4
+
+optimization:
+  lr: 0.0008
+  warmup_epochs: 3
+  early_stopping: true
+  patience: 25
+
+augmentation:
+  flip_prob: 0.5
+  scale: 0.2
+  degrees: 2.0
+  translate: 0.1
+
+  mosaic: false
+  mixup: false
+  copy_paste: false
+
+  multi_scale: false
+  expanded_scales: false
+
+notes:
+  - YOLO-aligned augmentations for fair comparison
+  - No HSV/perspective/shear (not native to RF-DETR)

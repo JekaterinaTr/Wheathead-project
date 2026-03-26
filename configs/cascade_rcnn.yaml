@@ -1,0 +1,46 @@
+# Cascade R-CNN Experiment Config (Documentation Only)
+
+model:
+  name: cascade_rcnn
+  backbone: ResNet50
+  neck: FPN
+  num_stages: 3
+  num_classes: 1
+
+data:
+  dataset: Global Wheat Head Dataset 2021
+  format: COCO
+  root: data/
+  train_annotations: annotations/instances_train.json
+  val_annotations: annotations/instances_val.json
+
+training:
+  epochs: 20
+  batch_size_per_gpu: 1
+  workers_per_gpu: 0
+  seed: 0
+
+optimization:
+  optimizer: SGD
+  lr: 0.0025
+  momentum: 0.9
+  weight_decay: 0.0001
+
+  scheduler: CosineAnnealing
+  min_lr: 1e-5
+
+augmentation:
+  resize:
+    scales: [832, 896]
+    multiscale: true
+
+  flip: 0.5
+
+  normalize:
+    mean: [123.675, 116.28, 103.53]
+    std: [58.395, 57.12, 57.375]
+
+notes:
+  - COCO format annotations (converted from YOLO)
+  - Soft-NMS used for dense object suppression
+  - Multi-stage IoU thresholds improve localization
