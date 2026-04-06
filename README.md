@@ -31,11 +31,14 @@ I compare **YOLO11 / YOLO12**, **RF-DETR**, and **Cascade R-CNN** models across 
 ---
 
 ## Repository Structure
-
+```
 🌾 wheat-head-detection/
 ├── 📄 README.md                     # Project description, instructions, metrics, etc.
+
 ├── 📁 data/                         # Sample data for testing only
+
 │   └── 📁 sample/
+
 │       ├── 📁 images/
 │       │   ├── 📄 img1.png
 │       │   └── 📄 img2.png
@@ -58,7 +61,7 @@ I compare **YOLO11 / YOLO12**, **RF-DETR**, and **Cascade R-CNN** models across 
 │   └── 📄 cascade_rcnn.txt
 ├── 📁 results/                        # Example predictions, images, or tables
 └── 📄 .gitignore
-
+```
 
 ---
 
