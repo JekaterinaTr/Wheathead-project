@@ -31,32 +31,33 @@ I compare **YOLO11 / YOLO12**, **RF-DETR**, and **Cascade R-CNN** models across 
 ---
 
 ## Repository Structure
-wheat-head-detection/
-├── README.md                     # Project description, instructions, metrics, etc.
-├── data/                         # Sample data for testing only
-│   └── sample/
-│       ├── images/
-│       │   ├── img1.png
-│       │   └── img2.png
-│       └── labels/
-│           ├── img1.txt
-│           └── img2.txt
-├── src/                           # Scripts for training and processing
-│   ├── yolo_to_coco_change.py     # Format change from YOLO to COCO for RF-DETR
-│   ├── wheathead_dataset.yaml     # YAML file for YOLOv11 and YOLOv12 training
-│   ├── train_rf_detr.py           # Training script for RF-DETR model
-│   └── train_cascade_rcnn.py      # Training script for Cascade R-CNN
-├── configs/                       # Model hyperparameters and config files
-│   ├── yolo11.yaml
-│   ├── yolo12.yaml
-│   ├── rf_detr.yaml
-│   └── cascade_rcnn.yaml
-├── requirements/                  # Separate dependencies per environment
-│   ├── yolo.txt
-│   ├── rf_detr.txt
-│   └── cascade_rcnn.txt
-├── results/                        # Example predictions, images, or tables
-└── .gitignore
+
+🌾 wheat-head-detection/
+├── 📄 README.md                     # Project description, instructions, metrics, etc.
+├── 📁 data/                         # Sample data for testing only
+│   └── 📁 sample/
+│       ├── 📁 images/
+│       │   ├── 📄 img1.png
+│       │   └── 📄 img2.png
+│       └── 📁 labels/
+│           ├── 📄 img1.txt
+│           └── 📄 img2.txt
+├── 📁 src/                           # Scripts for training and processing
+│   ├── 📄 yolo_to_coco_change.py     # Format change from YOLO to COCO for RF-DETR
+│   ├── 📄 wheathead_dataset.yaml     # YAML file for YOLOv11 and YOLOv12 training
+│   ├── 📄 train_rf_detr.py           # Training script for RF-DETR model
+│   └── 📄 train_cascade_rcnn.py      # Training script for Cascade R-CNN
+├── 📁 configs/                       # Model hyperparameters and config files
+│   ├── 📄 yolo11.yaml
+│   ├── 📄 yolo12.yaml
+│   ├── 📄 rf_detr.yaml
+│   └── 📄 cascade_rcnn.yaml
+├── 📁 requirements/                  # Separate dependencies per environment
+│   ├── 📄 yolo.txt
+│   ├── 📄 rf_detr.txt
+│   └── 📄 cascade_rcnn.txt
+├── 📁 results/                        # Example predictions, images, or tables
+└── 📄 .gitignore
 
 
 ---
