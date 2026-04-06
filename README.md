@@ -42,25 +42,22 @@ wheat-head-detection/
 │       └── labels/
 │           ├── img1.txt
 │           └── img2.txt
-├── src/   #Files for training
-    ├── yolo_to_coco_change.py      # Forat change for labels from Yolo to COCO for RF-DETR model
-│   ├── wheathead_dataset.yaml      #Yaml file for Yolo11 and Yolo12 training
-    ├── train_rf_detr.py            # Training script for RF-DETR model
-                         
-│   └──train_cascade_rcnn.py
-│                   # Optional: helper functions
-├── configs/                      # Model hyperparameters and config files
+├── src/                           # Scripts for training and processing
+│   ├── yolo_to_coco_change.py     # Format change from YOLO to COCO for RF-DETR
+│   ├── wheathead_dataset.yaml     # YAML file for YOLOv11 and YOLOv12 training
+│   ├── train_rf_detr.py           # Training script for RF-DETR model
+│   └── train_cascade_rcnn.py      # Training script for Cascade R-CNN
+├── configs/                       # Model hyperparameters and config files
 │   ├── yolo11.yaml
 │   ├── yolo12.yaml
-    ├── rf_dert.yaml
+│   ├── rf_detr.yaml
 │   └── cascade_rcnn.yaml
-├── requirements/                 # Separate dependencies per environment
+├── requirements/                  # Separate dependencies per environment
 │   ├── yolo.txt
 │   ├── rf_detr.txt
 │   └── cascade_rcnn.txt
-├── results/                      # Example predictions, images, or tables
+├── results/                        # Example predictions, images, or tables
 └── .gitignore
-
 
 ---
 
