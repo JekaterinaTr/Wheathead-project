@@ -34,11 +34,8 @@ I compare **YOLO11 / YOLO12**, **RF-DETR**, and **Cascade R-CNN** models across 
 ```
 🌾 wheat-head-detection/
 ├── 📄 README.md                     # Project description, instructions, metrics, etc.
-
 ├── 📁 data/                         # Sample data for testing only
-
 │   └── 📁 sample/
-
 │       ├── 📁 images/
 │       │   ├── 📄 img1.png
 │       │   └── 📄 img2.png
@@ -76,7 +73,7 @@ To train on the full Global Wheat Head Dataset 2021:
 2. Download the dataset manually (requires a Kaggle account)
 3. Extract the images and annotations
 4. Organize the folder structure as:
-
+```
 data/
 ├── images/
 │ ├── train/
@@ -86,7 +83,7 @@ data/
 ├── train/
 ├── val/
 └── test/
-
+```
 
 ---
 
